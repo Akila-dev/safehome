@@ -1,5 +1,7 @@
 import React from "react";
 
+// import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
+
 // import gradient from "../../assets/particles/gradient-bg.png";
 import pattern from "../../assets/particles/pattern-bg.png";
 import cross from "../../assets/particles/cross.png";
@@ -77,11 +79,11 @@ const Signup = () => {
 								<div className="grid grid-cols-1 md:grid-cols-2 gap-7 w-full">
 									<div>
 										<label htmlFor="">Password</label>
-										<input type="text" placeholder="Individual" />
+										<input type="password" placeholder="Individual" />
 									</div>
 									<div>
 										<label htmlFor="">Confirm Password</label>
-										<input type="text" placeholder="Individual" />
+										<input type="password" placeholder="Individual" />
 									</div>
 								</div>
 								<div className="pt-3 w-full max-w-[300px]">

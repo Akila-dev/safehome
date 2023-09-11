@@ -81,7 +81,7 @@ button:hover{
 }
 
 .signin-form input{
-    @apply block p-3 bg-[var(--card-bg)] w-full shadow text-[var(--placeholder)] outline-none
+    @apply block p-3 bg-[var(--card-bg)] w-full shadow outline-none
 }
 
 .signin-form button{
