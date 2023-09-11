@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // import gradient from "../../assets/particles/gradient-bg.png";
 import pattern from "../../assets/particles/pattern-bg.png";
@@ -9,6 +10,8 @@ import wriggle from "../../assets/particles/wriggle.png";
 import logo from "../../assets/auth-logo.png";
 
 const Login = () => {
+	const navigate = useNavigate();
+
 	return (
 		<div className="relative w-full min-h-screen orange-gradient-bg">
 			{/* Background */}
@@ -68,8 +71,10 @@ const Login = () => {
 							</form>
 						</div>
 						<div className="text-white flex flex-col gap-4 drop-shadow-md shadow-white">
-							<button>Don't have an account? Create account</button>
-							<button>Forgot Password?</button>
+							<button onClick={() => navigate("/signup")}>
+								Don't have an account? Create account
+							</button>
+							<button onClick={() => navigate("/")}>Forgot Password?</button>
 						</div>
 					</div>
 				</div>

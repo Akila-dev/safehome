@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
@@ -11,6 +12,8 @@ import wriggle from "../../assets/particles/wriggle.png";
 import logo from "../../assets/auth-logo.png";
 
 const Signup = () => {
+	const navigate = useNavigate();
+
 	return (
 		<div className="relative w-full min-h-screen orange-gradient-bg">
 			{/* Background */}
@@ -92,7 +95,9 @@ const Signup = () => {
 							</form>
 						</div>
 						<div className="text-white flex flex-col gap-4 drop-shadow-md shadow-white">
-							<button>Already have an account? Log In</button>
+							<button onClick={() => navigate("/login")}>
+								Already have an account? Log In
+							</button>
 						</div>
 					</div>
 				</div>
