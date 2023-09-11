@@ -48,7 +48,7 @@ const Login = () => {
 						<a href="/" className="pb-2">
 							<img src={logo} alt="" className="w-[100px]" />
 						</a>
-						<div className="bg-white rounded-2xl shadow px-[1rem] py-[2.5rem] md:p-[2.5rem] w-full">
+						<div className="bg-white rounded-xl shadow px-[1rem] py-[2.5rem] md:p-[2.5rem] w-full">
 							<h3 className="text-[var(--highlight)] font-semibold">
 								Login to your Account
 							</h3>
