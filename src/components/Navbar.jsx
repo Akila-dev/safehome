@@ -86,15 +86,21 @@ const Navbar = () => {
 						<div className="flex flex-col items-start gap-4 w-full">
 							<Navlink nav="About Us" link="/about" />
 							<Navlink nav="Services" link="/services" />
-							<Navlink nav="Products" link="/" />
-							<Navlink nav="Membership" link="/" />
-							<Navlink nav="Contact" link="/" />
+							<Navlink nav="Products" link="/products" />
+							<Navlink nav="Membership" link="/membership" />
+							<Navlink nav="Contact" link="/contact" />
 						</div>
 						<div className="py-5 flex lg:hidden flex-col gap-3 items-center w-full">
-							<button className="w-full h-[40px] bg-white text-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow">
+							<button
+								className="w-full h-[40px] bg-white text-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow"
+								onClick={() => navigate("/login")}
+							>
 								Log in
 							</button>
-							<button className="w-full h-[40px] text-white bg-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow">
+							<button
+								className="w-full h-[40px] text-white bg-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow"
+								onClick={() => navigate("/signup")}
+							>
 								Sign Up
 							</button>
 						</div>
