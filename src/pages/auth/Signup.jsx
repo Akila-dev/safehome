@@ -44,13 +44,13 @@ const Signup = () => {
 			/>
 
 			{/* Content */}
-			<div className="z-[10] left-0 right-0 min-h-screen h-full flex items-center justify-center py-[80px]">
+			<div className="z-[10] left-0 right-0 min-h-screen h-full flex items-center justify-center py-[50px] md:py-[80px]">
 				<div className="container z-[10]">
 					<div className="w-full max-w-[750px] mx-auto text-center flex flex-col gap-8 items-center">
 						<a href="/" className="pb-2">
-							<img src={logo} alt="" className="w-[91.48px] h-[40px]" />
+							<img src={logo} alt="" className="w-[100px]" />
 						</a>
-						<div className="bg-white rounded-2xl shadow px-[1.5rem] py-[2.5rem] md:p-[2.5rem] w-full">
+						<div className="bg-white rounded-2xl shadow px-[1rem] py-[2.5rem] md:p-[2.5rem] w-full">
 							<h3 className="text-[var(--highlight)] font-semibold">
 								Login to your Account
 							</h3>
